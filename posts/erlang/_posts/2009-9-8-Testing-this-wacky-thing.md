@@ -1,7 +1,7 @@
 ---
 title: Testing this wacky thing
 layout: post
-category: erlang
+category: [programming, erlang]
 ---
 
 Does this madness work?!
