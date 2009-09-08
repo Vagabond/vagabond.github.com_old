@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+	</head>
+	<body style="padding:0; spacing:0;">
+		<div style="position:fixed; top:0; left:0; padding-left:0em; padding-top:1em; width:15em; height:100%; border: 0px solid black;">
+			<ul>
+				<li><a href="about.html">about</a></li>
+				<li><a href="projects.html">projects</a></li>
+			</ul>
+			<br/>
+			&nbsp;categories
+			<ul>
+				<li><a href="erlang.html">erlang</a></li>
+			</ul>
+		</div>
+		<div style="position:absolute; left:0; width:100%; top:0; border: 0px solid black;">
+			<div style="padding-left:15em">
+				{{ content }}
+			</div>
+		</div>
+	</body>
+</html>
