@@ -3,16 +3,13 @@ title: Home
 layout: default
 ---
 
-Title1
-======
-
-Does this crazy stuff work?
-
 Title2
 ------
 
 How about this?
 
-{% for post in posts limit:3 %}
-<li><a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr></li>
+{% for post in site.posts limit:2 %}
+<h3><a href="{{ post.url }}">{{ post.title }}</a> -- <abbr>{{ post.date | date_to_string }}</abbr></h3>
+{{ post.content }}
+<hr style="width: 40%;"/>
 {% endfor %}
