@@ -6,4 +6,7 @@ layout: default
 
 <br/>
 
-Related posts:{{ site.related_posts.title }}
+Related posts:
+{% for post in site.related_posts %}
+<a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
